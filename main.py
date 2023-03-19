@@ -30,8 +30,8 @@ def main():
     result = parallel_processing(n, m, data)
     
     # TODO: print out the results, each pair in it's own line
-    for i in range(m):
-        print(result[i][0], result[i][1])
+    for pairs in range(m):
+        print(result[pairs][0], result[pairs][1])
 
 
 if __name__ == "__main__":
