@@ -23,15 +23,15 @@ def main():
     
     # second line - data 
     # data - contains m integers t(i) - the times in seconds it takes any thread to process i-th job
-    # data = []
+    data = []
     data = list(map(int, input().split()))
 
     # TODO: create the function
     result = parallel_processing(n, m, data)
     
     # TODO: print out the results, each pair in it's own line
-    for pairs in range(m):
-        print(result[pairs][0], result[pairs][1])
+    for i in range(m):
+        print(result[i][0], result[i][1])
 
 
 if __name__ == "__main__":
